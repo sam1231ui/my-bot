@@ -27,7 +27,7 @@ This is a fully open-source GenAI chatbot built using **Streamlit**, **LangChain
  
 
 
-##🛡 Limitations & Disclaimer
+## 🛡 Limitations & Disclaimer
 LinkedIn PDF parsing might miss some structured info due to formatting
 
 GPT-J requires decent hardware to run locally (16GB+ RAM recommended)
