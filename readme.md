@@ -25,3 +25,11 @@ This is a fully open-source GenAI chatbot built using **Streamlit**, **LangChain
 ------> Chunk & Embed (SBERT + FAISS) 
 ---------> LLM Q&A Logic
  
+
+
+🛡 Limitations & Disclaimer
+LinkedIn PDF parsing might miss some structured info due to formatting
+
+GPT-J requires decent hardware to run locally (16GB+ RAM recommended)
+
+This is a personal project and not affiliated with LinkedIn, GitHub, or OpenAI
