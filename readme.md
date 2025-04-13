@@ -1,0 +1,43 @@
+# 🤖 Personal GenAI Chatbot
+
+This is a fully open-source GenAI chatbot built using **Streamlit**, **LangChain**, and **Hugging Face models**. It answers questions about your **GitHub profile**, **LinkedIn (PDF export)**, and **Resume**, using intelligent agents that dynamically fetch and process your data.
+
+## ✨ Features
+
+- 🔍 Uses **LangChain agents** to interact with:
+  - GitHub (via API)
+  - LinkedIn profile (PDF)
+  - Resume (PDF)
+- 🧠 Uses a **free open-source LLM (GPT-J)** for response generation
+- 💡 Embedded within a simple and fast **Streamlit UI**
+- 🔄 “Refresh Profile Data” button to re-fetch data anytime
+- 💬 Ask questions like:
+  - _“What are my top GitHub projects?”_
+  - _“List my key skills from LinkedIn.”_
+  - _“Summarize my work experience from resume.”_
+
+---
+
+## 🧱 Project Structure
+
++------------------+
+|   Streamlit UI   |
++--------+---------+
+         |
+         v
++--------------------------+
+| Agent: Fetch & Parse     |
+| - GitHub via API         |
+| - LinkedIn via PDF       |
+| - Resume from blob/local |
++--------------------------+
+         |
+         v
++-----------------------------+
+| Chunk & Embed (SBERT + FAISS) |
++-----------------------------+
+         |
+         v
++------------------+
+|   LLM Q&A Logic  |
++------------------+

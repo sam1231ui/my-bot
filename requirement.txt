@@ -1,0 +1,8 @@
+streamlit
+langchain
+transformers
+torch
+faiss-cpu
+pdfplumber
+pymupdf
+github
