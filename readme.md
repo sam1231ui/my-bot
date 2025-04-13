@@ -20,24 +20,5 @@ This is a fully open-source GenAI chatbot built using **Streamlit**, **LangChain
 
 ## 🧱 Project Structure
 
-+------------------+
-|   Streamlit UI   |
-+--------+---------+
-         |
-         v
-+--------------------------+
-| Agent: Fetch & Parse     |
-| - GitHub via API         |
-| - LinkedIn via PDF       |
-| - Resume from blob/local |
-+--------------------------+
-         |
-         v
-+-----------------------------+
-| Chunk & Embed (SBERT + FAISS) |
-+-----------------------------+
-         |
-         v
-+------------------+
-|   LLM Q&A Logic  |
-+------------------+
+Streamlit UI  ---->   Agent: Fetch & Parse +GitHub via API + LinkedIn via PDF + Resume from blob/local ----------> Chunk & Embed (SBERT + FAISS) --------> LLM Q&A Logic
+ 
